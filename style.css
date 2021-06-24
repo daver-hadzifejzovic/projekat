@@ -165,12 +165,38 @@ body{
 .kartica4 , .kartica5 , .kartica6{
 
     background-color: snow;
+    height: 170px;
 
 }
 
 .kontakt{
     background-color: white;
     height: 400px;
+}
+
+.futer{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-family: 'Oswald' , sans-serif;
+    text-align: center;
+    font-size: 12px;
+    margin: 5px 0 0 0;   
+}
+
+.futer p{
+    transform: translateY(18px);
+}
+
+.futerske{
+    height: 300px;
+}
+
+.kartica:hover{
+    border-color: white;
+    background-color: rgb(190,32,32);
+    opacity: 0.8;
 }
 
 
