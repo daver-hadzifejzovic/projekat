@@ -42,5 +42,108 @@ body{
 }
 
 .kontejner{
-    z-index: -1;
+    width: 100%;
+    height: 700px;
+    position: relative;
 }
+.nametag{
+    position: absolute;
+    bottom: 35%;
+    left: 20%;
+    font-family: 'Oswald' , sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 50px;
+}
+.portfolio{
+    background: none;
+    margin: 0;
+    font-family: 'Oswald' , sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(190,32,32);
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    transition: 0.7s;
+    border: 4px solid rgb(190,32,32);
+    border-radius: 6px;
+    position: relative;
+}
+.portfolio, .portfolio::after{
+    transition: all 0.5s;
+}
+
+.portfolio::before , .portfolio::after{
+    background: white;
+    content: "";
+    position: absolute;
+    opacity: 0.1;
+}
+
+.portfolio::after{
+    width: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+}
+
+.portfolio:hover::after{
+    width: 100%;
+    cursor: pointer;
+}
+
+.usluge{
+    width: 100%;
+    height: 550px;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+}
+
+.kartice{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.kartica{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    margin-top: 10px;
+    border: 2px solid darkgray;
+    background-color: lightgray ;
+    border-radius: 4px;
+    text-align: center;
+    color: black;
+    overflow: hidden;
+}
+
+.projekti{
+    width: 100%;
+    height: 1130px;
+    background-color: snow;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+}
+.projekatslikatekst{
+    width: 70%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+}
+.projekatp{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
